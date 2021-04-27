@@ -38,12 +38,14 @@ def rotate(img, angle, rotpoint=0):
 # +angle --> anticlockwise rotation
 # rotate_image = rotate(image, -45)
 # cv.imshow('rotated image', rotate_image)
-#
+
 # #.... Flipping
- flip = cv.flip(image, -1)
+flip = cv.flip(image, -1)
 # cv.imshow('flipped image', flip)
-#
+
 # #....cropping
- cropped = img[100:200,200:400]
-cv.imshow('cropped', cropped)
+cropped = img[100:200,200:400]
+# cv.imshow('cropped', cropped)
+
+
 cv.waitKey(0)
