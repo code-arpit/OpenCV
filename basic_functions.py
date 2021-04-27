@@ -8,11 +8,11 @@ def rescale_frame(frame, scale):
 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
-img = cv.imread('/home/arpitjain/Desktop/PycharmProjects/opencv/pictures/falls.jpg')
+img = cv.imread('/home/arpitjain/Desktop/Code/Python/opencv/pictures/falls.jpg')
 
 #....rescale
-# img_rescale = rescale_frame(img, 0.25)
-# cv.imshow('falls', img_rescale)
+img_rescale = rescale_frame(img, 0.25)
+cv.imshow('falls', img_rescale)
 
 #....converting to grayscale
 # gray = cv.cvtColor(img_rescale, cv.COLOR_BGR2GRAY)
@@ -35,8 +35,8 @@ img = cv.imread('/home/arpitjain/Desktop/PycharmProjects/opencv/pictures/falls.j
 # cv.imshow('eroded', eroded)
 
 #....resize
-# resized = cv.resize(img_rescale, (500,300), interpolation=cv.INTER_AREA)
-# cv.imshow('resized', resized)
+resized = cv.resize(img_rescale, (500,300), interpolation=cv.INTER_AREA)
+cv.imshow('resized', resized)
 
 #....cropping
 # cropped = img_rescale[0:100,100:200]

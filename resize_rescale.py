@@ -9,7 +9,7 @@ def rescaleFrame(frame, scale):
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 #....resize images
 
-# img = cv.imread('/home/arpitjain/Desktop/PycharmProjects/opencv/pictures/falls.jpg')
+# img = cv.imread('/home/arpitjain/Desktop/Code/Python/opencv/pictures/falls.jpg')
 #
 # img_resized = rescaleFrame(img,0.2)
 #
@@ -19,7 +19,7 @@ def rescaleFrame(frame, scale):
 
 
 #.....resize videos
-# vid = cv.VideoCapture('/home/arpitjain/Desktop/PycharmProjects/opencv/videos/dog.mp4')
+# vid = cv.VideoCapture('/home/arpitjain/Desktop/Code/Python/opencv/videos/dog.mp4')
 #
 # while(True):
 #     isTrue, frame = vid.read()

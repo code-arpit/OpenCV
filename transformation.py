@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('/home/arpitjain/Desktop/PycharmProjects/opencv/pictures/falls.jpg')
+img = cv.imread('/home/arpitjain/Desktop/Code/Python/opencv/pictures/falls.jpg')
 image = cv.resize(img, (700, 500), interpolation=cv.INTER_AREA)
 
 
@@ -40,10 +40,12 @@ def rotate(img, angle, rotpoint=0):
 # cv.imshow('rotated image', rotate_image)
 #
 # #.... Flipping
- flip = cv.flip(image, -1)
+# flip = cv.flip(image, -1)
 # cv.imshow('flipped image', flip)
 #
 # #....cropping
- cropped = img[100:200,200:400]
+cropped = image[100:200,200:400]
 cv.imshow('cropped', cropped)
+
+
 cv.waitKey(0)
