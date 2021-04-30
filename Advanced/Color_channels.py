@@ -20,7 +20,12 @@ merged = cv.merge([b,g,r])
 cv.imshow('merged', merged)
 
 blank = np.zeros(image.shape[0:2], dtype='uint8')
+blue = cv.merge([b,blank,blank])
+green = cv.merge([blank,g,blank])
+red = cv.merge([blank,blank,r])
 
-
+cv.imshow('blue', blue)
+cv.imshow('green', green)
+cv.imshow('red', red)
 
 cv.waitKey
