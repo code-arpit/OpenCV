@@ -1,13 +1,13 @@
 import cv2 as cv
 
-img = cv.imread('/home/arpitjain/Desktop/Code/Python/OpenCV/pictures/me3.jpg')
+img = cv.imread('/home/arpitjain/Desktop/Code/Python/OpenCV/pictures/me2.jpg')
 image = cv.resize(img, (600,600))
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
 
-haar_cascade = cv.CascadeClassifier('/home/arpitjain/Desktop/Code/Python/OpenCV/Faces/haar_face.xml')
+cascade_face = cv.CascadeClassifier('/home/arpitjain/Desktop/Code/Python/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml')
 
-faces_rect = haar_cascade.detectMultiScale(gray, 1.5, 3)
+faces_rect = cascade_face.detectMultiScale(gray, 1.2, 3)
 
 print(f'number of faces found = {len(faces_rect)}')
 
